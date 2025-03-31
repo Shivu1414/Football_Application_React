@@ -1,0 +1,1083 @@
+body {
+    margin: 0;
+}
+
+.side-bar {
+    background-color: black;
+    min-height: 100vh;
+    width: 4%;
+    padding: 3px;
+    z-index: 1000;
+}
+
+.logo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 55%;
+    width: 55%;
+    border-radius: 50px;
+    border: 6px solid #fbb400;
+    transition: transform 0.4s;
+}
+
+.logo-img:hover {
+    transform: scale(1.2);
+}
+
+.sidebar-content-top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: transform 0.4s;
+}
+
+.menubar:hover {
+    transform: scale(1.1);
+    color: #fbb400;
+}
+
+.group-icon {
+    margin-top: 20px;
+}
+
+.menu-item {
+    width: 100%;
+    height: 100%;
+}
+
+.dot {
+    height: 30% !important;
+    margin: auto;
+    padding: 0;
+}
+
+.dot-top {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Team view */
+#root {
+    display: flex;
+}
+
+.team-view {
+    width: 96%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.team-content-top {
+    width: 93%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.team-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-name-heading {
+    color: #fbb400;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.nav-name-edit {
+    margin-top: 2px;
+    display: flex;
+}
+
+.edit-txt {
+    color: white;
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.nav-edit-icon {
+    padding-top: 4px;
+    margin-left: 5px;
+}
+
+.edit-icon {
+    color: white;
+    height: 20px !important;
+    cursor: pointer;
+}
+
+.nav-import {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    border: 1px solid #40414266;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding-left: 25px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    margin: auto;
+    width: 150px;
+}
+
+.search-bar-icon {
+    margin: auto;
+    padding-top: 3px;
+    margin-right: 2px;
+}
+
+.search-icon {
+    color: white;
+    height: 20px !important;
+}
+
+.search-inpt {
+    color: white;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: medium;
+    font-family: sans-serif;
+    width: 90%;
+}
+
+.search-btn {
+    color: #fbb400;
+    font-family: sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.search-btn-top {
+    padding-top: 14px;
+}
+
+.import-btn {
+    border-radius: 10px;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 0 20px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.re-import {
+    color: #f3f0f09e;
+    background-color: transparent;
+    border: 1px solid #40414266;
+}
+
+.re-import-dis {
+    color: white;
+    background-color: #fbb400;
+    border: none;
+}
+
+.import-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #a55b13;
+}
+
+/* team content */
+.team-content {
+    border-radius: 10px;
+    margin-top: 30px;
+    min-height: 77vh;
+    background-color: rgb(45 45 45 / 99%);
+}
+
+.table-view {
+    width: 100%;
+    padding: 20px;
+    padding-top: 25px;
+    color: white;
+}
+
+.heading td {
+    font-family: sans-serif;
+    font-size: smaller;
+    color: #fbb400;
+    font-weight: bold;
+}
+
+.table-heading-top {
+    min-height: 77vh;
+}
+
+.table-heading {
+    padding: 20px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tbl-data {
+    color: #adadad;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+.empty-txt {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.error-txt {
+    margin: auto;
+}
+
+.txt-child1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+.txt-child2 {
+    margin-top: 5px;
+    color: #fbb400;
+    font-family: sans-serif;
+    font-size: smaller;
+    text-align: center;
+}
+
+.no-btn {
+    min-width: 45px;
+}
+
+/* Dropdown */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.dropdown-content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(45 45 45);
+    border-radius: 15px;
+    z-index: 10000;
+    width: 70%;
+    height: 83vh;
+    position: fixed;
+    right: 12%;
+    top: 5%;
+}
+
+.dropdown-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-head-txt {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+.close {
+    color: white;
+    height: 16px !important;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: white;
+    background-color: #625b5bb0;
+}
+
+.dropdown-content-data {
+    padding: 3px;
+    padding-top: 20px;
+}
+
+.imp-heading {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* more dropdown */
+.more-icon {
+    cursor: pointer;
+}
+
+.action-dd {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(24 21 21);
+    border-radius: 15px;
+    z-index: 2000;
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    right: 70px;
+}
+
+.nav-action {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.action-head {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.act-cls-btn {
+    height: 20px !important;
+    cursor: pointer;
+}
+
+.actions-edit,
+.actions-del {
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.edit-txt-div,
+.del-txt-div {
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 3px;
+}
+
+.action-edit,
+.action-del {
+    height: 18px !important;
+}
+
+.action-edit-pop {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(45 45 45);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    z-index: 3000;
+    width: 390px;
+    height: 520px;
+    position: fixed;
+    right: 33%;
+    top: 6%;
+}
+
+.edit-backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2999;
+}
+
+.edit-heading {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-text {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+.edit-main-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inp-txt {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inp-edit {
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgb(62 62 62);
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inp-div {
+    margin: 10px 0px 5px 0;
+}
+
+.inp-select{
+    background-color: rgb(45 45 45);
+    cursor: pointer;
+}
+
+.t-s-a-b{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.edit-btn-top {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}
+
+.edit-submit-btn {
+    border: none;
+    outline: none;
+    background-color: #878585;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 15px !important;
+    font-size: 13px !important;
+}
+
+/* import input field */
+.imp-box-child2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.csvFile {
+    visibility: hidden;
+}
+
+.imp-box {
+    margin-top: 10px;
+}
+
+.inp-lable {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #625b5bb0;
+    color: white;
+    transition: .5s;
+    min-width: 35%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.csv-d-m{
+    border: 1px solid rgb(189 26 26) !important;
+}
+
+.csv-e{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(189 26 26);
+}
+
+.imp-box-child1 {
+    display: flex;
+}
+
+.slt-txt {
+    font-family: sans-serif;
+    font-size: smaller;
+    letter-spacing: 1px;
+    padding: 17px 35px 17px 24px;
+}
+
+.slt-btn {
+    font-family: sans-serif;
+    font-size: smaller;
+    letter-spacing: 1px;
+    padding: 17px 20px;
+    border-radius: 8px;
+    border: 1px solid #625b5bb0;
+}
+
+.import-value-count {
+    margin-top: 50px;
+}
+
+.count-heading {
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.count-table-view {
+    width: 100%;
+    color: white;
+    padding-top: 5px;
+}
+
+.count-table-data td {
+    padding-top: 15px;
+}
+
+.custom-swal {
+    z-index: 10000;
+}
+
+.count-table-data td {
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+.imp-t-btn {
+    border: none;
+    outline: none;
+    background-color: #878585;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+.active-imp-btn {
+    cursor: pointer;
+    background-color: #fbb400;
+    transition: transform 0.5s;
+}
+
+.active-imp-btn:hover {
+    transform: scale(1.1);
+    background-color: #0e9391;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.import-team-data {
+    height: 30vh;
+}
+
+.import-team-data-child {
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+}
+
+.team-list-data td {
+    font-family: sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.img-name {
+    display: flex;
+}
+
+.ply-img {
+    height: 25px;
+    width: 25px;
+}
+
+.ply-name {
+    margin: auto;
+}
+
+.ply-name-div {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-close {
+    color: white;
+    transition: transform 0.5s;
+}
+
+.search-close:hover {
+    transform: scale(1.1);
+    color: #fbb400;
+}
+
+.edit-csv-heading-div {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #40414266;
+}
+
+.edit-csv-heading {
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+    font-family: sans-serif;
+    margin-left: 3px;
+}
+
+.edit-head-icon {
+    margin-top: 25%;
+    margin-right: 5px;
+}
+
+.edit-icon-head-active {
+    cursor: default;
+}
+
+.field-background {
+    position: relative;
+    width: 96%;
+    min-height: 100vh;
+    background-color: #141414;
+    padding: 30px;
+    padding-top: 35px;
+}
+
+.f-h-child1 {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: smaller;
+    color: #fbb400;
+}
+
+.f-h-child2 {
+    display: flex;
+    color: white;
+}
+
+.f-h-child21 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: medium;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.f-edit-icon {
+    height: 18px !important;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.f-nav-edit {
+    width: 23%;
+    z-index: 999;
+}
+
+.field-structure {
+    padding: 25px;
+    background-color: rgb(45 45 45 / 99%);
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.football-field {
+    background-image: url(football-pitch.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 500px;
+    border-radius: 5px;
+    width: 63%;
+    margin-right: 25px;
+    display: flex;
+}
+
+.field-heading,
+.f-nav-edit {
+    position: relative;
+    z-index: 9;
+}
+
+.f-player-view {
+    background-color: #141414;
+    width: 20%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.f-p-child1 {
+    height: 65%;
+}
+
+.f-hr {
+    border: none;
+    height: 2px;
+    background-color: #463f3f;
+}
+
+.f-p-empty-pop {
+    z-index: 5000;
+    background-color: rgb(40 40 40);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 24%;
+    position: absolute;
+    top: 45%;
+    left: 33%
+}
+
+.f-data-empty {
+    margin: auto;
+    color: white;
+    padding: 20px 50px;
+}
+
+.f-d-e-child2 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+}
+
+.f-d-e-child1-top {
+    display: flex;
+    justify-content: center;
+}
+
+.f-p-e-warning {
+    color: #ffa700;
+    height: 20px !important;
+}
+
+.f-d-e-child12 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.f-n-suffPyr {
+    color: white;
+    padding: 20px;
+}
+
+.f-p {
+    background-color: rgb(45 45 45 / 99%);
+    height: 28px;
+    width: 28px;
+    margin: auto;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.f-p:hover {
+    transform: scale(1.1);
+    background-color: #a55b13;
+}
+
+.player-pin-cirle {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 70%;
+    position: relative;
+    left: 5%;
+    top: 9%;
+}
+
+.f-p-glk {
+    display: flex;
+    justify-content: center;
+}
+
+.f-p-dfnr,
+.f-p-mdf,
+.f-p-frwd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.num {
+    margin: auto;
+    font-size: small;
+}
+
+.run-name {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    color: white;
+}
+
+.f-p-top {
+    margin: auto;
+}
+
+.f-p-child2 {
+    display: flex;
+    margin-top: 25px;
+}
+
+.f-p-child21,
+.f-p-child22 {
+    width: 50%;
+    color: white;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+.det-num {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fbb400;
+}
+
+.det-name {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.f-bg-change {
+    background-color: #df7710;
+}
+
+.bottom-data {
+    margin-bottom: 15px;
+}
+
+.f-p-image {
+    height: 225px;
+    margin-bottom: 15px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    position: relative;
+}
+
+.f-p-details {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.f-c-i-view {
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.f-p-v-det {
+    display: flex;
+}
+
+.f-d-i-h {
+    margin-bottom: 5px;
+}
+
+.f-player-pic {
+    width: 225px;
+    height: 225px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.f-p-j-n-b {
+    color: #fea01310;
+    font-weight: 600;
+    font-size: 100px;
+    position: relative;
+    top: -25px;
+    left: 15px;
+}
+
+.f-p-j-n-s {
+    color: #fbb400;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    top: -126px;
+    left: 20px;
+}
+
+.f-p-v-n {
+    position: absolute;
+    top: 175px;
+    z-index: 99;
+}
+
+.f-p-name {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    text-shadow: 5px 2px 8px black;
+}
+
+.f-p-pos {
+    color: #fbb400;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 5px 2px 8px black;
+}
+
+.csv-h-edited {
+    display: none !important;
+}
+
+.edit-txt:hover+.nav-edit-icon .edit-icon {
+    display: block !important;
+}
+
+.f-h-child21:hover+.f-h-child22 .f-edit-icon {
+    display: block !important;
+}
+
+.error-csv{
+    margin-top: 10px;
+}
+
+.csv-e-t{
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.edit-select-box{
+    display: flex;
+}
+
+.slt-yes{
+    margin-right: 15px;
+}
+
+/* radio button in edit form */
+input[type="radio"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+  }
+  
+  label {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  label::before {
+    content: '';
+    display: block;
+    height: 1.25em;
+    width: 1.25em;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    transition: border ease-in 150ms, box-shadow ease-in 150ms;
+}
+  
+  input[type="radio"]:checked + label::before,
+  input[type="radio"]:focus + label::before {
+    color: #df7710;
+  }
+  
+  input[type="radio"]:checked + label::before {
+    background: radial-gradient(0.75em circle at center, currentColor 50%, transparent 55%);
+    box-shadow: 0 0 1em 0 #df7710;
+    border-color: currentColor;
+  }
+
+  input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 1em 0 #df7710;
+    border-color: currentColor;
+  }
+
+/* selector */
+.options-list {
+    position: absolute;
+    top: 102%;
+    left: 0;
+    right: 0;
+    background-color: rgb(45 45 45);
+    border: 2px solid rgb(62 62 62);
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .option:hover {
+    background-color: #fbb400;
+  }
